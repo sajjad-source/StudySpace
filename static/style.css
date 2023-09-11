@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #3498db;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.intro, .about, .features, .contact {
+    margin-bottom: 40px;
+}
+
+.sort-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#spaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.space {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    transition: transform 0.3s;
+}
+
+.space:hover {
+    transform: translateY(-10px);
+}
+
+.reserve-btn {
+    display: block;
+    background-color: #e74c3c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for the new sections */
+.features ul, .contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li, .contact li {
+    margin-bottom: 10px;
+}
+
+.features li::before, .contact li::before {
+    content: '✔';
+    margin-right: 10px;
+    color: #2ecc71;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #2980b9;
+}
+
+header {
+    transition: top 0.3s;
+}

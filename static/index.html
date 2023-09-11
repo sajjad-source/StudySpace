@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Space Finder</title>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_PROJECT_ID.appspot.com",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <title>Study Space Finder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Study Spaces at Dartmouth</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to the Study Space Finder</h2>
+            <p>Discover the best study spaces at Dartmouth. Whether you're looking for a quiet corner or a collaborative workspace, we've got you covered.</p>
+        </section>
+        <section class="spaces-section">
+            <div class="sort-options">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="title">Title</option>
+                    <option value="location">Location</option>
+                    <option value="capacity">Capacity</option>
+                </select>
+            </div>
+            <div id="spaces"></div>
+        </section>
+        <section class="about">
+            <h2>About This Project</h2>
+            <p>This project was created to help Dartmouth students find the perfect study space tailored to their needs. Using advanced web scraping techniques, we provide up-to-date information on available spaces, their features, and reservation options.</p>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time data scraping</li>
+                <li>User-friendly interface</li>
+                <li>Advanced sorting options</li>
+                <li>Direct reservation links</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us at <a href="mailto:info@studyspacefinder.com">info@studyspacefinder.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Study Space Finder &copy; 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
