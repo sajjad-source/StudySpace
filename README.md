@@ -1,3 +1,11 @@
+# Study Space Finder
+
+**Study Space Finder** is a web application designed to assist Dartmouth students in finding the ideal study space tailored to their preferences and needs. By leveraging advanced web scraping techniques, the application provides real-time information on available study spaces, detailing their features and offering direct reservation options. Whether you're in search of a quiet corner for focused study or a collaborative workspace for group projects, Study Space Finder has got you covered.
+
+## Overview
+
+The primary goal of this project is to simplify the process of finding and reserving study spaces at Dartmouth. With an intuitive user interface, users can easily sort through available spaces based on various criteria, ensuring they find a spot that aligns with their study habits and requirements.
+
 ## Setup
 
 ### Installation
