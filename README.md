@@ -30,17 +30,18 @@
 
 ## Cron Job
    **Make the script executable:**
-      ```bash
+   ```bash
       chmod +x update_study_spaces.py
-      
+   ```
+
    **Open your crontab:**
-      ```bash
+   ```bash
       crontab -e
-
+   ```
    **Add a line to run the script every day at a specific time (e.g., 2 AM):**
-      ```bash
+   ```bash
       0 2 * * * /usr/bin/python3 /path/to/update_study_spaces.py
-
+   ```
    **Replace /usr/bin/python3 with the path to your Python interpreter. (You can find this with the which python3 command.)**
    
    **Replace /path/to/update_study_spaces.py with the absolute path to the update_study_spaces.py script.**
